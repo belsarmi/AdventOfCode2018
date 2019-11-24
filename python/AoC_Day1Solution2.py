@@ -5,7 +5,7 @@ with open("AoC_Day1Input.txt") as f:
         zahlen.append(int(zeile.strip()))
 
 result = 0
-results = []
+results = {}
 found = False
 numberLoops = 0
 while not found:
@@ -18,7 +18,7 @@ while not found:
             found = True
             break
         else:
-            results.append(result)
+            results[result] = False
 print(f"Sum of the input: {sum(zahlen)}")
 # number of loops 144
 #frequency: 71961
